@@ -1,8 +1,8 @@
-# cyber-threat-intelligence-dashboard
+# Enterprise Network Security Incident Analysis
 
 ## Overview
 
-This project analyzes publicly available cybersecurity incident data to identify trends, patterns, and risk factors. The goal is to demonstrate data analysis techniques using SQL, Excel, and Power BI while applying an intelligence-based analytical approach.
+This project uses a publicly available cybersecurity dataset for educational and portfolio purposes to demonstrate SQL, data visualization, and analytical techniques.
 
 ## Objectives
 
