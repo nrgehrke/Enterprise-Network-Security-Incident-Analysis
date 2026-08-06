@@ -31,3 +31,9 @@ Dataset source:
 ## Recommendations
 
 (To be completed after analysis)
+
+## Project Structure
+Data/ - Dataset files
+SQL/ - SQL queries and analysis scripts
+PowerBI/ - Dashboard files
+Documentation/ - Analysis findings and reports
