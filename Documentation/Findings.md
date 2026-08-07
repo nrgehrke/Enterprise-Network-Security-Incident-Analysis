@@ -53,7 +53,9 @@ Which attack types account for the greatest number of high-severity incidents?
 - Malware: 4432
 - Intrusion: 4427
 
-DDoS attacks accounted for greatest number of high-severity incidents, however, the synthetic data demonstrates a fairly balanced split between DDoS, Malware, and Intrusion attacks.
+DDoS events recorded the highest number of high-severity incidents (4,523), followed closely by Malware (4,432) and Intrusion (4,427).
+
+The narrow distribution between attack categories suggests the dataset was intentionally balanced for analytical purposes. As a result, no single attack category appears disproportionately associated with high-severity events.
 
 ## Anomaly Scores
 
@@ -61,7 +63,11 @@ DDoS attacks accounted for greatest number of high-severity incidents, however, 
 Are some attack types associated with higher anomaly scores?
 
 ### Finding
-Anomaly scores are fairly consistent across all attack types most likely due to the synthetic data provided in the dataset.
+Average anomaly scores ranged from 49.98 to 50.24.
+
+This minimal variation indicates that anomaly score alone is unlikely to distinguish attack categories within this dataset.
+
+Additional contextual variables such as protocol, network segment, or device operating system would likely be required for deeper analysis.
 
 ## Protocol Analysis
 
@@ -69,7 +75,11 @@ Anomaly scores are fairly consistent across all attack types most likely due to 
 Are attack types and severity levels associated with particular network protocols?
 
 ### Finding
-The highest amount of incidents reported were medium-level Malware attacks using UDP, while the lowest number of incidents reported were also Malware attacks characterized as low-level severity using UDP. The results do not demonstrate any pattern of attack types and severity levels associated with network protocols.
+No meaningful relationship was identified between attack category, severity level, and protocol.
+
+Incident counts remained relatively balanced across TCP, UDP, and ICMP traffic.
+
+This suggests protocol alone is not a strong predictor of attack severity within the dataset.
 
 ## Time Analysis
 
@@ -77,4 +87,8 @@ The highest amount of incidents reported were medium-level Malware attacks using
 Are cybersecurity events concentrated during particular hours?
 
 ### Finding
-The highest number of recorded incidents occurred during the 1300 hour, closely followed by the 2000 hour, and then the 0400 hour. There data does not demonstrate consistent cybersecurity events correlated with a particular time range.
+Incident activity remained relatively consistent throughout the day.
+
+Although 1300 recorded the highest number of events, hourly differences were small and did not indicate a sustained period of elevated activity.
+
+The dataset does not demonstrate a statistically significant time-based attack pattern.
