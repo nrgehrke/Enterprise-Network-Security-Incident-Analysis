@@ -49,11 +49,11 @@ real-world security conclusions.
 Which attack types account for the greatest number of high-severity incidents?
 
 ### Finding
-(To be completed after Query 11)
+- DDoS: 4523
+- Malware: 4432
+- Intrusion: 4427
 
-### Potential Business Impact
-Identifying attack types associated with high-severity events can help
-security teams prioritize monitoring and defensive resources.
+DDoS attacks accounted for greatest number of high-severity incidents, however, the synthetic data demonstrates a fairly balanced split between DDoS, Malware, and Intrusion attacks.
 
 ## Anomaly Scores
 
@@ -61,7 +61,7 @@ security teams prioritize monitoring and defensive resources.
 Are some attack types associated with higher anomaly scores?
 
 ### Finding
-(To be completed after Queries 12 and 13)
+Anomaly scores are fairly consistent across all attack types most likely due to the synthetic data provided in the dataset.
 
 ## Protocol Analysis
 
@@ -69,7 +69,7 @@ Are some attack types associated with higher anomaly scores?
 Are attack types and severity levels associated with particular network protocols?
 
 ### Finding
-(To be completed after Query 14)
+The highest amount of incidents reported were medium-level Malware attacks using UDP, while the lowest number of incidents reported were also Malware attacks characterized as low-level severity using UDP. The results do not demonstrate any pattern of attack types and severity levels associated with network protocols.
 
 ## Time Analysis
 
@@ -77,4 +77,4 @@ Are attack types and severity levels associated with particular network protocol
 Are cybersecurity events concentrated during particular hours?
 
 ### Finding
-(To be completed after Query 15)
+The highest number of recorded incidents occurred during the 1300 hour, closely followed by the 2000 hour, and then the 0400 hour. There data does not demonstrate consistent cybersecurity events correlated with a particular time range.
