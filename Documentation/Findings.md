@@ -49,10 +49,6 @@ real-world security conclusions.
 Which attack types account for the greatest number of high-severity incidents?
 
 ### Finding
-- DDoS: 4523
-- Malware: 4432
-- Intrusion: 4427
-
 DDoS events recorded the highest number of high-severity incidents (4,523), followed closely by Malware (4,432) and Intrusion (4,427).
 
 The narrow distribution between attack categories suggests the dataset was intentionally balanced for analytical purposes. As a result, no single attack category appears disproportionately associated with high-severity events.
