@@ -41,6 +41,8 @@ This makes the project useful for demonstrating
 SQL and visualization skills rather than drawing
 real-world security conclusions.
 
+---
+
 ## High-Severity Incidents
 
 ### Business Question
