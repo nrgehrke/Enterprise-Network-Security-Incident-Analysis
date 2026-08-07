@@ -1,4 +1,4 @@
--- Query 11 - Top Browsers
+-- Query 11 - High Severity Incidents
 SELECT
     attack_type,
     COUNT(*) AS high_severity_incidents
@@ -7,7 +7,7 @@ WHERE severity_level = 'High'
 GROUP BY attack_type
 ORDER BY high_severity_incidents DESC;
 
--- Query 12 - Top Browsers
+-- Query 12 - Anomaly Scores
 SELECT
     attack_type,
     ROUND(AVG(anomaly_score),2) AS average_score
@@ -15,7 +15,7 @@ FROM cyber_attacks
 GROUP BY attack_type
 ORDER BY average_score DESC;
 
--- Query 13 - Top Browsers
+-- Query 13 - Anomaly Scores
 SELECT
     attack_type,
     MAX(anomaly_score) AS highest_score,
@@ -23,7 +23,7 @@ SELECT
 FROM cyber_attacks
 GROUP BY attack_type;
 
--- Query 14 - Top Browsers
+-- Query 14 - Protocol Analysis
 SELECT
     attack_type,
     severity_level,
@@ -36,7 +36,7 @@ GROUP BY
     protocol
 ORDER BY incidents DESC;
 
--- Query 15 - Top Browsers
+-- Query 15 - Time Analysis
 SELECT
     event_hour,
     COUNT(*) AS incidents
