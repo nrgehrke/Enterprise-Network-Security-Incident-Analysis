@@ -37,3 +37,46 @@ SELECT
 FROM cyber_attacks
 GROUP BY protocol
 ORDER BY total DESC;
+
+-- Query 6 - Attack Type vs Severity
+SELECT
+    attack_type,
+    severity_level,
+    COUNT(*) AS incidents
+FROM cyber_attacks
+GROUP BY attack_type, severity_level
+ORDER BY attack_type, incidents DESC;
+
+-- Query 7 - Attack Type vs Protocol
+SELECT
+    attack_type,
+    protocol,
+    COUNT(*) AS incidents
+FROM cyber_attacks
+GROUP BY attack_type, protocol
+ORDER BY attack_type, incidents DESC;
+
+-- Query 8 - Attack Type by Hour
+SELECT
+    event_hour,
+    attack_type,
+    COUNT(*) AS incidents
+FROM cyber_attacks
+GROUP BY event_hour, attack_type
+ORDER BY event_hour;
+
+-- Query 9 - Top Operating Systems
+SELECT
+    device_os,
+    COUNT(*) AS incidents
+FROM cyber_attacks
+GROUP BY device_os
+ORDER BY incidents DESC;
+
+-- Query 10 - Top Browsers
+SELECT
+    browser,
+    COUNT(*) AS incidents
+FROM cyber_attacks
+GROUP BY browser
+ORDER BY incidents DESC;
